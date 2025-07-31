@@ -6,10 +6,6 @@ const fastifyInstance = fastify({
   logger: true,
 });
 
-fastifyInstance.get("/", (request, reply) => {
-  reply.send("Done");
-});
-
 fastifyInstance.register(app);
 
 fastifyInstance.listen({ port: serverConfig.PORT }, (err) => {
