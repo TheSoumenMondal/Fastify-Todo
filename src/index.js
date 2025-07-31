@@ -17,5 +17,7 @@ fastifyInstance.listen({ port: serverConfig.PORT }, (err) => {
     fastifyInstance.log.error(err);
     process.exit(1);
   }
-  fastifyInstance.log.info(`Server is running on http://localhost:${serverConfig.PORT}`);
+  fastifyInstance.log.info(
+    `Server is running on http://localhost:${serverConfig.PORT}`
+  );
 });
